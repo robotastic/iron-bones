@@ -3,7 +3,7 @@ var middleware = require('..').middleware;
 
 server = Bones.Server.extend({});
 
-server.prototype.port = 3000;
+server.prototype.port = 3001;
 
 server.prototype.initialize = function(app) {
     this.port = app.config.port || this.port;
