@@ -1,5 +1,5 @@
 {
-    "name": "bones",
+    "name": "iron-bones",
     "description": "Framework for using backbone.js on the client and server.",
     "version": "2.4.0",
 
@@ -8,7 +8,7 @@
       "url": "http://developmentseed.org/",
       "email": "info@developmentseed.org"
     },
-
+    "private": "true",
     "main": "./bones.js",
 
     "dependencies": {
@@ -17,7 +17,7 @@
         "backbone": "0.5.3",
         "jquery": "~1.6.3",
         "optimist": "0.3.x",
-        "mirror": "0.3.x"
+        "iron-mirror": "0.3.x"
     },
 
     "scripts": {
