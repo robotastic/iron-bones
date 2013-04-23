@@ -7,7 +7,7 @@ var path = require('path');
 
 exports.$ = require('jquery');
 exports._ = require('underscore');
-exports.mirror = require('mirror');
+exports.mirror = require('iron-mirror');
 
 exports.utils = require(path.join(__dirname, 'server/utils'));
 exports.middleware = require(path.join(__dirname, 'server/middleware'));

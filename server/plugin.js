@@ -58,21 +58,23 @@ require.extensions['._'] = function(module, filename) {
         var lines = err.message.split('\n');
         lines.splice(1, 0, '    in template ' + filename);
         err.message = lines.join('\n');
+        console.log(err.message);
         throw err;
     }
-
+            
     module.exports.register = function(app) {
         if (app.assets) {
+
         	if ((/\.secure\.bones$/).test(filename)) 
         	{
         			app.assets.secureTemplates.push({
         			    filename: filename,
-        			    content: 'template = ' + module.exports + ';'
+        			    content: 'template = ' + module.exports.source + ';'
         			});
         	} else {
         		app.assets.templates.push({
         		    filename: filename,
-        		    content: 'template = ' + module.exports + ';'
+                    content: 'template = ' + module.exports.source + ';'
         		});
         	}
 
