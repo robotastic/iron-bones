@@ -65,7 +65,7 @@ require.extensions['._'] = function(module, filename) {
     module.exports.register = function(app) {
         if (app.assets) {
 
-        	if ((/\.secure\.bones$/).test(filename)) 
+        	if ((/\.secure\._/).test(filename)) 
         	{
         			app.assets.secureTemplates.push({
         			    filename: filename,
